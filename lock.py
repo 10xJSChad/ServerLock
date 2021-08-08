@@ -2,7 +2,12 @@ import mordhau_rcon
 import config
 
 locked = False
+
 admins = {
+    "PLAYFABID_GOES_HERE": True,
+}
+
+whitelist = {
     "PLAYFABID_GOES_HERE": True,
 }
 
@@ -12,8 +17,9 @@ client.connect()
 
 def onConnect(id):
     print(id, "connected")
-    if locked and id not in admins:
+    if locked and id not in admins and id not in whitelist:
         print(client.run("kick " + id + " Server is locked"))
+        print("kick")
 
 def lock(id):
     global locked
