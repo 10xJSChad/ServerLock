@@ -6,7 +6,7 @@ When the server is locked, only players who have been added to the admins list i
 
 1. Make sure your Mordhau server is configured for RCON
 2. Clone this repository
-3. Add your server's IP, RCON Port & RCON Password to Config.py
+3. Add your server's IP, RCON Port & RCON Password to config.py
 4. Add yourself to the admin list in lock.py
 5. Run main.py
 6. Connect to your Mordhau server and type !lock to toggle ServerLock
