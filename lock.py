@@ -3,7 +3,7 @@ import config
 
 locked = False
 admins = {
-    "PLAYFABID": True,
+    "PLAYFABID_GOES_HERE": True,
 }
 
 client = mordhau_rcon.Client(config.host, config.port)
