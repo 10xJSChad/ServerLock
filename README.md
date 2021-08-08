@@ -9,7 +9,7 @@ When the server is locked, only players who have been added to the admins list i
 3. Add your server's IP, RCON Port & RCON Password to config.py
 4. Add yourself to the 'admins' dictionary in lock.py
 5. Run main.py
-6. Connect to your Mordhau server and type !lock to toggle ServerLock
+6. Connect to your Mordhau server and type '!lock' to toggle ServerLock
 
 <h2>Using ServerLock as a whitelist</h2>
 If you wish to use ServerLock as a standard server whitelist, simply set the 'locked' variable to True in lock.py and add your whitelisted playfabids to the 'whitelist' dictionary. <br>
