@@ -19,6 +19,9 @@ The server will then be locked by default, and only whitelisted players and admi
 **Note:** Admins can still disable the lock with '!lock' <br>
 **Note 2:** The term 'admins' refers to players who have their playfabid entered into the 'admins' dictionary in lock.py, I do not mean in-game admins.
 
+<h2> Requirements</h2>
+
+* Python 3.8 or higher
 <h2>Credits</h2>
 
 [10xJSChad](https://github.com/10xJSChad) - ServerLock <br>
