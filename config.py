@@ -1,4 +1,4 @@
 #RCON Settings
 host = ""
-port = ""
+port = 0000
 password = ""
