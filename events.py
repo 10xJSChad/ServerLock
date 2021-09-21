@@ -3,7 +3,7 @@ import lock
 def parse_login(input):
     login = not input[-3:] == "out"
     username, playfabid = input[28:][:-29], input[-27:][:-11]
-    playfabid = playfabid.replace("(", "")
+    playfabid = playfabid.replace("(", "").replace(",", "").strip()
     if login: lock.onConnect(playfabid)
 
 def parse_chat(input):
@@ -14,7 +14,7 @@ def parse_chat(input):
         message = input.split("(ALL)")[1][1:][:-1]
     except: 1+1
     
-    playfabid = playfabid.replace("(", "")
+    playfabid = playfabid.replace("(", "").replace(",", "").strip()
     function = commands.get(message)
     if function: return(function(playfabid))
 
